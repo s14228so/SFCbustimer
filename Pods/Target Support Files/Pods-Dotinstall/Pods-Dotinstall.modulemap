@@ -1,0 +1,6 @@
+framework module Pods_Dotinstall {
+  umbrella header "Pods-Dotinstall-umbrella.h"
+
+  export *
+  module * { export * }
+}
