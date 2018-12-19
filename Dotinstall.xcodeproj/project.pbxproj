@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0B61422A5BB74CFEFD27B7 /* Pods_Dotinstall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F3052825359535D7E8539 /* Pods_Dotinstall.framework */; };
 		741A2C6121A5C4D800C1B6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A2C6021A5C4D800C1B6A2 /* AppDelegate.swift */; };
 		741A2C6321A5C4D800C1B6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A2C6221A5C4D800C1B6A2 /* ViewController.swift */; };
 		741A2C6621A5C4D800C1B6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741A2C6421A5C4D800C1B6A2 /* Main.storyboard */; };
@@ -39,9 +40,6 @@
 		741A2C6721A5C4D900C1B6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741A2C6A21A5C4D900C1B6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		741A2C6C21A5C4D900C1B6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		741ED2A721CA5CB30063E533 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		741ED2A921CA5CB30063E533 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		741ED2AB21CA5CB30063E533 /* RAMPaperSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RAMPaperSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7448298B21CA6D0F00165447 /* bus_schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bus_schedule.json; path = ../../../Downloads/bus_schedule.json; sourceTree = "<group>"; };
 		7448298D21CA703800165447 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		748E72B821C748A800D481E0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0B61422A5BB74CFEFD27B7 /* Pods_Dotinstall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,9 +132,6 @@
 		85145C9072C4E53E582C6724 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				741ED2A721CA5CB30063E533 /* MBCircularProgressBar.framework */,
-				741ED2A921CA5CB30063E533 /* PageMenu.framework */,
-				741ED2AB21CA5CB30063E533 /* RAMPaperSwitch.framework */,
 				218F3052825359535D7E8539 /* Pods_Dotinstall.framework */,
 			);
 			name = Frameworks;
