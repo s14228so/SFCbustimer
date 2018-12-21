@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wbx-dh-zja">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Controller-->
+        <scene sceneID="XIu-C7-EFp">
+            <objects>
+                <tabBarController storyboardIdentifier="Next" id="Wbx-dh-zja" customClass="MainTabController" customModule="Dotinstall" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sBH-fg-5iF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.32812741670000001" green="0.47682498680000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qBh-Ot-dWl" kind="relationship" relationship="viewControllers" id="ett-aB-Fnb"/>
+                        <segue destination="Ek6-Ay-1G7" kind="relationship" relationship="viewControllers" id="6ci-sA-0Qs"/>
+                        <segue destination="ZnZ-uq-cd8" kind="relationship" relationship="viewControllers" id="pEQ-pi-6au"/>
+                        <segue destination="AvY-yj-5W5" kind="relationship" relationship="viewControllers" id="Phl-9U-Ikm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P40-YT-rcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1165" y="-271"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="ten-oW-pbg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" id="ZnZ-uq-cd8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="eRU-Mo-03v">
+                        <color key="badgeColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ni2-JR-k4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="-245"/>
+        </scene>
+        <!--Shonan-->
+        <scene sceneID="vyE-09-bmh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shonan" id="qBh-Ot-dWl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="aTT-nC-ZGL"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toh-9m-9w5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-576" y="-477"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="OXr-D1-S3c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="AvY-yj-5W5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="設定" id="FOF-1q-Usi">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcw-rQ-2ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542" y="-116"/>
+        </scene>
+        <!--SFC-->
+        <scene sceneID="euy-WQ-oAW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SFC" id="Ek6-Ay-1G7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SFC" id="yM1-TB-htb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fui-yb-lu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="-414"/>
+        </scene>
+    </scenes>
+</document>

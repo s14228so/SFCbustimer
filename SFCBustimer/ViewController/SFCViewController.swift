@@ -14,13 +14,13 @@ import SwiftyJSON
 //import MBCircularProgressBar
 
 
-class ShonanViewController: UIViewController {
+class SFCViewController: UIViewController {
     
     //    var cnt : Int = 0
     var timer: Timer?
     
     var duration = 0
-    var buses: [[String: Int]] = []
+     var buses: [[String: Int]] = []
     var progressWidth: Float = 1.0
     
     
@@ -51,7 +51,7 @@ class ShonanViewController: UIViewController {
         
     }
     func getBuses(){
-        Alamofire.request("https://api.myjson.com/bins/7bdlk")
+        Alamofire.request("https://api.myjson.com/bins/11b720")
             .responseJSON { response in
                 guard let object = response.result.value else {
                     return
@@ -60,24 +60,16 @@ class ShonanViewController: UIViewController {
                 let json = JSON(object)
                 json.forEach { (_, json) in
                     let bus: [String: Int] = [
-                        "hour": json[0]["weekday"][0]["hour"].int!,
-                        "min": json[0]["weekday"][0]["min"].int!
+                        "hour": json["weekday"][0]["hour"].int!,
+                        "min": json["weekday"][0]["min"].int!
                     ] // 一つの辞書を作成
                     
-                    let num:Int? = 100
-                    
-                    if let newNum = num {
-                        print(newNum)
-                    } else {
-                        print("newNumに値は設定されていません。")
-                    }
-                    
-//                    let bus1: [String: Int] = [
-//                        "hour": json[0]["weekday"][0]["hour"].int!,
-//                        "min": json[0]["weekday"][0]["min"].int!
-//                    ]
+                    let bus1: [String: Int] = [
+                        "hour": json["weekday"][0]["hour"].int!,
+                        "min": json["weekday"][0]["min"].int!
+                    ]
                     self.buses.append(bus)
-//                    self.buses.append(bus1)// 配列に入れる
+                    self.buses.append(bus1)// 配列に入れる
                     
                 }
                 
@@ -95,8 +87,8 @@ class ShonanViewController: UIViewController {
                 
                 print(string)
                 self.datePicker()
-                
-                
+               
+
                 
                 self.nextBus.text = "次のバスは\(hour)時\(min)分"
         }
@@ -146,5 +138,4 @@ class ShonanViewController: UIViewController {
         progressView.progress = progressWidth
     }
 }
-
 
