@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F0B61422A5BB74CFEFD27B7 /* Pods_Dotinstall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F3052825359535D7E8539 /* Pods_Dotinstall.framework */; };
 		741A2C6121A5C4D800C1B6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A2C6021A5C4D800C1B6A2 /* AppDelegate.swift */; };
 		741A2C6321A5C4D800C1B6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A2C6221A5C4D800C1B6A2 /* ViewController.swift */; };
 		741A2C6621A5C4D800C1B6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741A2C6421A5C4D800C1B6A2 /* Main.storyboard */; };
@@ -15,6 +14,8 @@
 		741A2C6B21A5C4D900C1B6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741A2C6921A5C4D900C1B6A2 /* LaunchScreen.storyboard */; };
 		7448298C21CA6D0F00165447 /* bus_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 7448298B21CA6D0F00165447 /* bus_schedule.json */; };
 		7448298E21CA703800165447 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448298D21CA703800165447 /* MainViewModel.swift */; };
+		746F4DED21CD417B00DD9E10 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746F4DEB21CD417B00DD9E10 /* SwiftyJSON.framework */; };
+		746F4DEE21CD417B00DD9E10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746F4DEC21CD417B00DD9E10 /* Alamofire.framework */; };
 		748E72B921C748A800D481E0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748E72B821C748A800D481E0 /* SettingViewController.swift */; };
 		748E72BB21C748E500D481E0 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748E72BA21C748E500D481E0 /* ScheduleViewController.swift */; };
 		748E72BD21C7499A00D481E0 /* Shonan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748E72BC21C7499A00D481E0 /* Shonan.storyboard */; };
@@ -30,9 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		218F3052825359535D7E8539 /* Pods_Dotinstall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dotinstall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DFE31CC729A77D16DF2DC4A /* Pods-Dotinstall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dotinstall.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dotinstall/Pods-Dotinstall.release.xcconfig"; sourceTree = "<group>"; };
-		344FB79A703C42E95AE99882 /* Pods-Dotinstall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dotinstall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dotinstall/Pods-Dotinstall.debug.xcconfig"; sourceTree = "<group>"; };
 		741A2C5D21A5C4D800C1B6A2 /* Dotinstall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dotinstall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741A2C6021A5C4D800C1B6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		741A2C6221A5C4D800C1B6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +40,8 @@
 		741A2C6C21A5C4D900C1B6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7448298B21CA6D0F00165447 /* bus_schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bus_schedule.json; path = ../../../Downloads/bus_schedule.json; sourceTree = "<group>"; };
 		7448298D21CA703800165447 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		746F4DEB21CD417B00DD9E10 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		746F4DEC21CD417B00DD9E10 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		748E72B821C748A800D481E0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		748E72BA21C748E500D481E0 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		748E72BC21C7499A00D481E0 /* Shonan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shonan.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F0B61422A5BB74CFEFD27B7 /* Pods_Dotinstall.framework in Frameworks */,
+				746F4DED21CD417B00DD9E10 /* SwiftyJSON.framework in Frameworks */,
+				746F4DEE21CD417B00DD9E10 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +74,7 @@
 			children = (
 				741A2C5F21A5C4D800C1B6A2 /* Dotinstall */,
 				741A2C5E21A5C4D800C1B6A2 /* Products */,
-				F382F3480C69AF137AE48400 /* Pods */,
-				85145C9072C4E53E582C6724 /* Frameworks */,
+				746F4DEA21CD417B00DD9E10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +114,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		746F4DEA21CD417B00DD9E10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				746F4DEC21CD417B00DD9E10 /* Alamofire.framework */,
+				746F4DEB21CD417B00DD9E10 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		748E72BE21C749E100D481E0 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,23 +138,6 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
-		85145C9072C4E53E582C6724 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				218F3052825359535D7E8539 /* Pods_Dotinstall.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F382F3480C69AF137AE48400 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				344FB79A703C42E95AE99882 /* Pods-Dotinstall.debug.xcconfig */,
-				2DFE31CC729A77D16DF2DC4A /* Pods-Dotinstall.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +149,7 @@
 				741A2C5921A5C4D800C1B6A2 /* Sources */,
 				741A2C5A21A5C4D800C1B6A2 /* Frameworks */,
 				741A2C5B21A5C4D800C1B6A2 /* Resources */,
+				746F4DEF21CD418900DD9E10 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -221,14 +214,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		746F4DEF21CD418900DD9E10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 		F7CABA219BFE4B8B3F0C40F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
@@ -236,7 +246,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -396,11 +407,14 @@
 		};
 		741A2C7021A5C4D900C1B6A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 344FB79A703C42E95AE99882 /* Pods-Dotinstall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RU6BNAV63J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Dotinstall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,11 +429,14 @@
 		};
 		741A2C7121A5C4D900C1B6A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DFE31CC729A77D16DF2DC4A /* Pods-Dotinstall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RU6BNAV63J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Dotinstall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
