@@ -78,24 +78,33 @@ class SFCViewController: UIViewController {
                 
                 
                 print(self.buses[0]["hour"]!)
-//                let hour = self.buses["hour"]
-//                let min = self.buses["min"]
-//
-//                var zisho:[String:String] = ["名前": "山田", "年齢": "32", "出身": "栃木"]
-//                print(zisho["名前"]! + "さん")
-//                let items: Dictionary<String, Int> = ["りんご": 100, "みかん": 300, "バナナ": 150]
-//                if let price = items["みかん"] {
-//                    print(price)    // 300
-//                }
-//
-//                print(self.buses)
-//
+                let now = NSDate()
                 
-//                if let price = buses["]["hour"]{
-//                    print(price)    // 30
-//                }
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
                 
-                self.nextBus.text = "\(hour)時\(min)分"
+                let string = formatter.string(from: now as Date)
+                
+                print(string)
+                self.datePicker()
+               
+
+                
+                self.nextBus.text = "次のバスは\(hour)時\(min)分"
+        }
+    }
+    
+    func datePicker(){
+        let comp = Calendar.Component.weekday
+        let weekday = NSCalendar.current.component(comp, from: NSDate() as Date)
+        
+        if weekday < 5 {
+            print("今日は平日です")
+            //平日のタイムテーブルから取得
+            
+        } else if weekday >=  5{
+            print("今日は週末です")
+            //週末のタイムテーブルから取得
         }
     }
     
