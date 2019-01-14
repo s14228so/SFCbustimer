@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SFC-->
         <scene sceneID="hPX-2B-CEH">
             <objects>
                 <viewController id="N5O-HK-QlG" customClass="SFCViewController" customModule="Dotinstall" customModuleProvider="target" sceneMemberID="viewController">
@@ -127,7 +127,7 @@
                             <outletCollection property="gestureRecognizers" destination="rpR-6T-aLO" appends="YES" id="8Ck-g0-0eP"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="79i-Sd-YCk"/>
+                    <tabBarItem key="tabBarItem" title="SFC" id="79i-Sd-YCk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="countDown" destination="Hl8-Ga-u9R" id="Z7R-Xf-jhX"/>

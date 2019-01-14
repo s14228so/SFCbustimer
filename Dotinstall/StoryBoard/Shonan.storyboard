@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Shonan View Controller-->
+        <!--湘南台-->
         <scene sceneID="f3S-6Y-GbP">
             <objects>
                 <viewController storyboardIdentifier="Shonan" id="PoI-0O-3Zp" customClass="ShonanViewController" customModule="Dotinstall" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,8 +52,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOM-AC-i0G" userLabel="main">
                                 <rect key="frame" x="0.0" y="124" width="414" height="689"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湘南台駅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzY-Nd-LTd">
-                                        <rect key="frame" x="172" y="30" width="70" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzY-Nd-LTd">
+                                        <rect key="frame" x="191" y="30" width="32" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="4M4-sb-TdZ"/>
                                         </constraints>
@@ -61,8 +61,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiM-Nm-Uby">
-                                        <rect key="frame" x="191" y="76" width="32" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湘南台駅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiM-Nm-Uby">
+                                        <rect key="frame" x="172" y="76" width="70" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -128,7 +128,7 @@
                             <outletCollection property="gestureRecognizers" destination="4MD-So-LFV" appends="YES" id="nvm-Dc-8sp"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="CwM-1J-J3X"/>
+                    <tabBarItem key="tabBarItem" title="湘南台" id="CwM-1J-J3X"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="countDown" destination="vLO-w3-BLD" id="N6x-G7-sHo"/>

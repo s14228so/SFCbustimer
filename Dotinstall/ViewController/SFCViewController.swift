@@ -51,7 +51,7 @@ class SFCViewController: UIViewController {
         
     }
     func getBuses(){
-        Alamofire.request("https://api.myjson.com/bins/11b720")
+        Alamofire.request("https://api.myjson.com/bins/169it4")
             .responseJSON { response in
                 guard let object = response.result.value else {
                     return
@@ -60,33 +60,49 @@ class SFCViewController: UIViewController {
                 let json = JSON(object)
                 json.forEach { (_, json) in
                     let bus: [String: Int] = [
-                        "hour": json["weekday"][0]["hour"].int!,
-                        "min": json["weekday"][0]["min"].int!
+                        "hour": json["hour"].int!,
+                        "min": json["min"].int!
                     ] // 一つの辞書を作成
                     
-                    let bus1: [String: Int] = [
-                        "hour": json["weekday"][0]["hour"].int!,
-                        "min": json["weekday"][0]["min"].int!
-                    ]
+                 
                     self.buses.append(bus)
-                    self.buses.append(bus1)// 配列に入れる
+//                    print(json)
                     
+                    
+            
                 }
                 
-                let hour = self.buses[0]["hour"]!
-                let min = self.buses[0]["min"]!
+                
+                let hour = self.buses[4]["hour"]!
+                let min = self.buses[4]["min"]!
+                //添字を変えれば次のオブジェクトに移動してる
                 
                 
-                print(self.buses[0]["hour"]!)
-                let now = NSDate()
+//                print(self.buses[0]["hour"]!)
+           
                 
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-                
-                let string = formatter.string(from: now as Date)
-                
-                print(string)
                 self.datePicker()
+//
+                let date = Date()
+                
+//                取得する要素を選択する
+                let calendar = Calendar.current
+                let component = (calendar as NSCalendar).components([NSCalendar.Unit.year, NSCalendar.Unit.month, NSCalendar.Unit.day, NSCalendar.Unit.hour, NSCalendar.Unit.minute, NSCalendar.Unit.second, NSCalendar.Unit.weekday], from: date)
+                
+//                let nowHour = component.hour!
+//                print(self.buses)
+                
+            
+                for (key,value) in self.buses[4] {
+                    print("\(key)は\(value)円です。")
+                }
+                // 日時と時間の出力
+//                print("西暦:"+String(component.year!))
+//                print("月:"+String(component.month!))
+//                print("日:"+String(component.day!))
+//                print("時:"+String(component.hour!))
+//                print("分:"+String(component.minute!))
+//                print("秒:"+String(component.second!))
                
 
                 

@@ -64,13 +64,7 @@ class ShonanViewController: UIViewController {
                         "min": json[0]["weekday"][0]["min"].int!
                     ] // 一つの辞書を作成
                     
-                    let num:Int? = 100
-                    
-                    if let newNum = num {
-                        print(newNum)
-                    } else {
-                        print("newNumに値は設定されていません。")
-                    }
+    
                     
 //                    let bus1: [String: Int] = [
 //                        "hour": json[0]["weekday"][0]["hour"].int!,
@@ -84,16 +78,7 @@ class ShonanViewController: UIViewController {
                 let hour = self.buses[0]["hour"]!
                 let min = self.buses[0]["min"]!
                 
-                
-                print(self.buses[0]["hour"]!)
-                let now = NSDate()
-                
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-                
-                let string = formatter.string(from: now as Date)
-                
-                print(string)
+            
                 self.datePicker()
                 
                 
